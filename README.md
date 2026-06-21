@@ -20,7 +20,7 @@ A simple To-Do List Application built using Laravel, Blade Templates, Bootstrap,
 
 Run the application and start playing!
 
-https://github.com/shervss/laravel-todo-app/blob/main/laravel-to-do.png?raw=true
+![image alt](https://github.com/shervss/laravel-todo-app/blob/main/laravel-to-do.png?raw=true)
 
 ---
 
