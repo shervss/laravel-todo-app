@@ -21,7 +21,8 @@ class TaskController extends Controller
         ]);
 
         Task::create([
-            'title' => $request->title
+            'title' => $request->title,
+            'status' => 'New'
         ]);
 
         return redirect('/');
@@ -39,6 +40,15 @@ class TaskController extends Controller
     public function destroy(Task $task)
     {
         $task->delete();
+
+        return redirect('/');
+    }
+    
+    public function updateStatus(Request $request, Task $task)
+    {
+        $task->update([
+            'status' => $request->status
+        ]);
 
         return redirect('/');
     }

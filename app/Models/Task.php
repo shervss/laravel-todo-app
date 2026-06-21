@@ -8,6 +8,7 @@ class Task extends Model
 {
     protected $fillable = [
         'title',
-        'completed'
+        'completed',
+        'status'
     ];
 }
